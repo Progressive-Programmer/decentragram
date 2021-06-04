@@ -49,7 +49,7 @@ contract Decentragram {
     function tipImageOwner(uint _id) public payable{
         require(_id>0 && _id <= imageCount);
         //  Fetch the image 
-        Image memory _image = image[_id];
+        Image memory _image = images[_id];
         //  fetch the author
         address payable _author = _image.author;
         // pay the author
